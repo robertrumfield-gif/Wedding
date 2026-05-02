@@ -1,4 +1,7 @@
-/* style.css */
+/* 
+   WEDDING RECEPTION: ROBERT & GABBY 
+   SEPTEMBER 4, 2026 
+*/
 
 body {
     margin: 0;
@@ -7,9 +10,10 @@ body {
     color: #000000;
     text-align: center;
     
-    /* BACKGROUND IMAGE SETTINGS */
-    background-color: #f5f5dc; /* Fallback beige */
-    background-image: url(love-146.jpg);
+    /* 1. BACKGROUND IMAGE FIX */
+    /* If the photo fails to load, the beige color will show instead */
+    background-color: #f5f5dc; 
+    background-image: url('love-146.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,61 +21,78 @@ body {
     
     display: flex;
     justify-content: center;
+    align-items: flex-start; /* Allows scrolling on mobile */
     min-height: 100vh;
 }
 
 .container {
     width: 90%;
     max-width: 700px;
-    margin: 50px auto;
-    padding: 40px 20px;
+    margin: 40px 20px;
+    padding: 50px 25px;
     
-    /* FROSTED GLASS LOOK */
+    /* 2. READABILITY: Frosted glass effect */
     background-color: rgba(245, 245, 220, 0.9); 
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    backdrop-filter: blur(4px); /* Adds a nice blur effect to the photo behind the box */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px); /* Blurs the photo behind the box for a premium look */
+    -webkit-backdrop-filter: blur(8px);
 }
 
 h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: clamp(2.5rem, 7vw, 4rem);
-    margin-bottom: 10px;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin: 0 0 10px 0;
     font-weight: normal;
 }
 
 .subtitle {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 0.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
 }
 
 .details p {
-    font-size: 1.2rem;
-    margin: 8px 0;
+    font-size: 1.3rem;
+    margin: 10px 0;
     font-weight: 300;
 }
 
 .rsvp-section {
-    margin-top: 40px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding-top: 30px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 40px;
 }
 
 h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .form-container {
     width: 100%;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 iframe {
     border: none;
     border-radius: 10px;
+    width: 100%; /* Ensures the form fits all screens */
+}
+
+/* 3. MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 15px;
+        margin: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 2.8rem;
+    }
 }
