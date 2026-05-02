@@ -1,0 +1,59 @@
+body {
+    background-color: #f5f5dc; /* Neutral Beige */
+    color: #000000; /* Black Font */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 10px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Adjusts size for mobile */
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.rsvp-section {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+iframe {
+    border: none;
+    background: transparent;
+}
